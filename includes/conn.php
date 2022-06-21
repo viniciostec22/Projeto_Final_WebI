@@ -1,9 +1,9 @@
 <?php
     //Declarações de Variavéis
     $servername ="127.0.0.1";
-    $database   ="projeto01";
+    $database   ="crm_academico";
     $username   ="root";
-    $password   ="root";
+    $password   ="059580";
 
     //Criação da Conexão com a BD
     $conn = mysqli_connect($servername, $username, $password, $database);

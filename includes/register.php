@@ -2,16 +2,16 @@
 <!-- form -->
 <form action="register.php" method="POST">
     <div class="form-group">
-        <input name="nome" id="nome" type="text" class="form-control" placeholder="Informe o seu nome" required autofocus>
+        <input name="name" id="name" type="text" class="form-control" placeholder="Informe o seu nome" required autofocus>
     </div>
     <div class="form-group">
-        <input name="sobrenome" id="sobrenome" type="text" class="form-control" placeholder="Informe o seu sobrenome" required>
+        <input name="last_name" id="last_name" type="text" class="form-control" placeholder="Informe o seu sobrenome" required>
     </div>
     <div class="form-group">
         <input name="email" id="email" type="email" class="form-control" placeholder="Informe o seu Email" required>
     </div>
     <div class="form-group">
-        <input name="senha" id="senha" type="password" class="form-control" placeholder="Informe a sua senha" required>
+        <input name="password" id="password" type="password" class="form-control" placeholder="Informe a sua senha" required>
     </div>
     <button class="btn btn-primary btn-block">Registrar</button>
     <hr>
@@ -21,18 +21,18 @@
 <!-- ./ form -->
 <?php
 
-if (!empty($_POST['nome'])) {
+if (!empty($_POST['name'])) {
     include("includes/conn.php");
 
-    $nome       = $_POST['nome'];
-    $sobrenome  = $_POST['sobrenome'];
+    $name       = $_POST['name'];
+    $last_name  = $_POST['last_name'];
     $email      = $_POST['email'];
-    $senha      = md5($_POST['senha']);
+    $password      = md5($_POST['password']);
 
     //string SQL
     $sql = "insert into usuario 
-    (nome, sobrenome, email, senha) 
-    values ('".$nome."', '".$sobrenome."', '".$email."', '".$senha."');";
+    (name, last_name, email, password) 
+    values ('".$name."', '".$last_name."', '".$email."', '".$password."');";
 
     //Execução da Consulta
     if (mysqli_query($conn, $sql)) {

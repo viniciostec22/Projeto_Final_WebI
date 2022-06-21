@@ -5,7 +5,7 @@
         <input name="email" id="email" type="text" class="form-control" placeholder="Informe o e-mail" required autofocus>
     </div>
     <div class="form-group">
-        <input name="senha" id="senha" type="password" class="form-control" placeholder="Informe a senha senha" required>
+        <input name="password" id="password" type="password" class="form-control" placeholder="Informe a senha senha" required>
     </div>
     <div class="form-group d-flex justify-content-between">
         <div class="custom-control custom-checkbox">
@@ -22,20 +22,20 @@
 <!-- ./ form -->
 <?php
 
-if( (!empty($_POST['email'])) and (!empty($_POST['senha'])) ){
+if( (!empty($_POST['email'])) and (!empty($_POST['password'])) ){
     
     include("includes/conn.php");
     session_start();
 
     $login = $_POST['email'];
-    $senha = md5($_POST['senha']);
+    $password = md5($_POST['password']);
 
     $sql="select 
         * 
     from 
         usuario
     where 
-        email='".$login."' and senha='".$senha."';";
+        email='".$login."' and password='".$password."';";
 
 
     $result = mysqli_query($conn, $sql);
@@ -47,11 +47,11 @@ if( (!empty($_POST['email'])) and (!empty($_POST['senha'])) ){
         $dados = mysqli_fetch_array($result);
 
         
-        if(!strcmp($senha, $dados['senha'])){
+        if(!strcmp($password, $dados['password'])){
 
             $_SESSION['id_usuario'] = $dados['id'];
-            $_SESSION['nome_usuario'] = $dados['nome'];
-            $_SESSION['sobrenome_usuario'] = $dados['sobrenome'];
+            $_SESSION['name_usuario'] = $dados['name'];
+            $_SESSION['last_name_usuario'] = $dados['last_name'];
             $_SESSION['email_usuario'] = $dados['email'];
 
             //echo $_SESSION["id_usuario"];
