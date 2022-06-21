@@ -14,7 +14,7 @@
                 <tr>
                   <td>Tiago Nogueira</td>
                   <td>Desenvolvimento Web</td>
-                  <td>3° Semestre</td>
+                  <td>4° Semestre</td>
                 </tr>
                 ...
               </tbody>
