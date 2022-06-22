@@ -44,6 +44,9 @@ if (!empty($_POST['nome'])) {
 ?>
 
 
+
+
+
 <script>
     $(document).ready(function (){
         $('#professores').DataTable();

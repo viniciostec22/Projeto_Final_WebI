@@ -45,9 +45,15 @@ require "includes/validation.php";
                     include 'pages/home.php';
                 }else if($page=='professor'){
                     include 'pages/professor.php';
-                }            
+                }  
+                if($page=='home'){
+                    include 'pages/home.php';
+                }else if($page=='listar_professor'){
+                    include 'pages/listar_professor.php';
+                }             
             }
             ?>
+            
         </div>
         <!-- begin::footer -->
         <footer>
