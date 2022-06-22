@@ -22,7 +22,7 @@
 <?php
 
 if (!empty($_POST['name'])) {
-    include("includes/conn.php");
+    include("./includes/conn.php");
 
     $name       = $_POST['name'];
     $last_name  = $_POST['last_name'];
