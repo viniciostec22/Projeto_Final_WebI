@@ -21,9 +21,9 @@ if (!empty($_POST['nome'])) {
 
     include("./includes/conn.php");
     
-    $nome       = $_POST['nome'];
+    $nome        = $_POST['nome'];
     $disciplina  = $_POST['disciplina'];
-    $periodo      = $_POST['periodo'];
+    $periodo     = $_POST['periodo'];
    
 
     //string SQL
@@ -42,10 +42,6 @@ if (!empty($_POST['nome'])) {
     mysqli_close($conn);
 }
 ?>
-
-
-
-
 
 <script>
     $(document).ready(function (){

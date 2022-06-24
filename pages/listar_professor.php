@@ -29,27 +29,14 @@
                 <td>
                     <button class="btn btn-success" >Editar</button>
 
-                </td>
+            </td>
                 <td>
-                    <button class="btn btn-danger" >
-                    <a href="page.php?page=listar_professor?id=<?php echo $row[0]; ?>">Remover</a>
+                    <button class="btn btn-danger">
+                    <a href="pages/delet_professor.php?id=<?php echo $row[0]; ?>">Remover</a>
                     </button>
                 </td>
             </tr>
         <?php
-        }
-    
-        if( !empty($_GET['id'])){
-            $sql2 = "delete from produtos where id=".$_GET['id'];
-
-            if(mysqli_query($conn, $sql2)){
-                echo "<script> 
-                        alert('Remoção realizada com sucesso!');
-                    </script>";
-            }else{
-                echo "<script> alert('Remoção não realizada!') </script>";
-            }
-            
         }
     ?>
 </table>
@@ -61,3 +48,4 @@
         $('#listar_porfessor').DataTable();
     });    
 </script>
+

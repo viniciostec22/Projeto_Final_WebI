@@ -128,4 +128,9 @@
         return false;
     });
 
+    async function apagarProfessorDados(id){
+        console.log("acesso a função " + id);
+    }
+
+
 })(jQuery);
