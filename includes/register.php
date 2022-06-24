@@ -27,7 +27,7 @@ if (!empty($_POST['name'])) {
     $name       = $_POST['name'];
     $last_name  = $_POST['last_name'];
     $email      = $_POST['email'];
-    $password      = md5($_POST['password']);
+    $password   = md5($_POST['password']);
 
     //string SQL
     $sql = "insert into usuario 

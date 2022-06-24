@@ -6,7 +6,7 @@
     $password   ="059580";
 
     //Criação da Conexão com a BD
-    $conn = mysqli_connect($servername, $username, $password, $database);
+    $conn = mysqli_connect($servername, $username, $password, $database, '3306');
 
     if(!$conn){
         die ("Falha de Conexão com o MySQL". mysqli_connect_error());

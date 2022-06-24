@@ -33,6 +33,15 @@ CREATE TABLE `Cst_gti` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `Cst_gti`
+--
+
+LOCK TABLES `Cst_gti` WRITE;
+/*!40000 ALTER TABLE `Cst_gti` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Cst_gti` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `Cst_has_Disciplinas`
 --
 
@@ -51,6 +60,15 @@ CREATE TABLE `Cst_has_Disciplinas` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `Cst_has_Disciplinas`
+--
+
+LOCK TABLES `Cst_has_Disciplinas` WRITE;
+/*!40000 ALTER TABLE `Cst_has_Disciplinas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Cst_has_Disciplinas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `Disciplinas`
 --
 
@@ -64,6 +82,15 @@ CREATE TABLE `Disciplinas` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Disciplinas`
+--
+
+LOCK TABLES `Disciplinas` WRITE;
+/*!40000 ALTER TABLE `Disciplinas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Disciplinas` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `alunos`
@@ -85,6 +112,15 @@ CREATE TABLE `alunos` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `alunos`
+--
+
+LOCK TABLES `alunos` WRITE;
+/*!40000 ALTER TABLE `alunos` DISABLE KEYS */;
+/*!40000 ALTER TABLE `alunos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `alunos_has_Disciplinas`
 --
 
@@ -103,6 +139,15 @@ CREATE TABLE `alunos_has_Disciplinas` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `alunos_has_Disciplinas`
+--
+
+LOCK TABLES `alunos_has_Disciplinas` WRITE;
+/*!40000 ALTER TABLE `alunos_has_Disciplinas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `alunos_has_Disciplinas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `professores`
 --
 
@@ -115,8 +160,18 @@ CREATE TABLE `professores` (
   `disciplina` varchar(45) DEFAULT NULL,
   `periodo` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `professores`
+--
+
+LOCK TABLES `professores` WRITE;
+/*!40000 ALTER TABLE `professores` DISABLE KEYS */;
+INSERT INTO `professores` VALUES (1,'Tiago do carmo nogueira ','Desenvolvimento WEB 1 ','4'),(2,'Caio','Engenharia de software 1','4');
+/*!40000 ALTER TABLE `professores` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `usuario`
@@ -134,6 +189,16 @@ CREATE TABLE `usuario` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuario`
+--
+
+LOCK TABLES `usuario` WRITE;
+/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` VALUES (6,'Vinicios Matheus ','oliveira da silva','vinicios471@gmail.com','81dc9bdb52d04dc20036dbd8313ed055'),(7,'VINICIOS MATHEUS OLIVEIRA','SILVA','vinicios471@gmail.com','8c04100d32d5021e53e626b3528b9a2d');
+/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -144,4 +209,4 @@ CREATE TABLE `usuario` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-24 13:37:54
+-- Dump completed on 2022-06-24 16:07:12

@@ -4,16 +4,15 @@
     
     $id_professor = $_GET["id"];
     
-    $sql = "delete  from professor where id =  $id_professor";
+    $sql = "DELETE FROM professores WHERE id = '$id_professor'";
+    var_dump(mysqli_connect($conn,$sql));
+
     echo $sql;
-
-    $result = mysqli_query($conn, $sql);
-    echo "teste";
-
+    
+ 
    
-
+    mysqli_close($conn);
 ?>
-
 
 
 
