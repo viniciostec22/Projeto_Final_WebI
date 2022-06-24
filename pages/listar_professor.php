@@ -32,7 +32,7 @@
             </td>
                 <td>
                     <button class="btn btn-danger">
-                    <a href="pages/delet_professor.php?id=<?php echo $row[0]; ?>">Remover</a>
+                    <a href="pages/delet_professor.php?id=<?php echo $row[0]; ?> " onclick="return confirm('Tem certeza que deseja deletar esse registro?');">Remover</a>
                     </button>
                 </td>
             </tr>
