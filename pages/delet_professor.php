@@ -14,11 +14,19 @@
     var_dump(mysqli_query($conn,$sql));
 
     if(mysqli_query($conn, $sql)){
-        echo "<script> 
+        print "<script> 
                 alert('Remoção realizada com sucesso!');
             </script>";
+        print "<script>
+                location.href='../page.php?page=listar_professor';
+            </script>";
     }else{
-        echo "<script> alert('Remoção não realizada!') </script>";
+        echo "<script> 
+                alert('Remoção não realizada!') 
+              </script>";
+        print "<script>
+                location.href='../page.php?page=listar_professor';
+              </script>";
     }
    
     mysqli_close($conn);

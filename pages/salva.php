@@ -24,6 +24,9 @@ if($res == true){
          </script>";
     
 }else{
-    echo "<script> alert('Remoção não realizada!') </script>";
+    print "<script> alert('Remoção não realizada!') </script>";
+    print "<script>
+            location.href='../page.php?page=listar_professor';
+         </script>";
 }
 ?>
