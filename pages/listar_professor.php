@@ -27,12 +27,16 @@
                 <td><?php echo $row[2]; ?></td>
                 <td><?php echo $row[3]; ?></td>
                 <td>
-                    <button class="btn btn-success" >Editar</button>
+                    <button class="btn btn-success">
+                        <a href="pages/editar_professor.php?id=<?php echo $row[0]; ?> ">Editar</a>
+                    </button>
 
             </td>
                 <td>
                     <button class="btn btn-danger">
-                    <a href="pages/delet_professor.php?id=<?php echo $row[0]; ?> " onclick="return confirm('Tem certeza que deseja deletar esse registro?');">Remover</a>
+                        <a href="pages/delet_professor.php?id=
+                        <?php echo $row[0]; ?> " onclick="return confirm
+                        ('Tem certeza que deseja deletar esse registro?');">Remover</a>
                     </button>
                 </td>
             </tr>
@@ -40,8 +44,6 @@
         }
     ?>
 </table>
-
-
 
 <script>
     $(document).ready(function (){
