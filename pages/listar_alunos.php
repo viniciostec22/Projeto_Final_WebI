@@ -16,7 +16,10 @@
         <td><strong>Remover</strong></td>
     </tr>
     <?php
-        $sql="select * from alunos;";
+        $sql="SELECT alunos.id, alunos.nome, alunos.matricula, alunos.periodo_entrada, cst_gti.nome 
+            FROM alunos 
+            JOIN cst_gti
+            ON alunos.id = cst_gti_id; ";
 
         $result = mysqli_query($conn, $sql);
 
