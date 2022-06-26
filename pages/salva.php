@@ -29,4 +29,6 @@ if($res == true){
             location.href='../page.php?page=listar_professor';
          </script>";
 }
+
+mysqli_close($conn);
 ?>

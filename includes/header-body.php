@@ -7,7 +7,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link" data-toggle="dropdown">
+                    <a href="page.php?page=home" class="nav-link" data-toggle="dropdown">
                         <img width="18" src="../../assets/media/image/flags/262-united-kingdom.png" alt="flag"
                              class="mr-2 rounded" title="United Kingdom"> EN
                     </a>
@@ -274,7 +274,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
                         <div class="bg-dark p-4 text-center d-flex justify-content-between align-items-center">
-                            <h5 class="mb-0">Notifications</h5>
+                            <h5 class="mb-0">Notificações</h5>
                             <small class="font-size-11 opacity-7">1 unread notifications</small>
                         </div>
                         <div>

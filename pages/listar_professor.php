@@ -28,13 +28,13 @@
                 <td><?php echo $row[3]; ?></td>
                 <td>
                     <button class="btn btn-success">
-                        <a href="pages/editar_professor.php?id=<?php echo $row[0]; ?> ">Editar</a>
+                        <a class="text-white" href="pages/editar_professor.php?id=<?php echo $row[0]; ?> ">Editar</a>
                     </button>
 
             </td>
                 <td>
-                    <button class="btn btn-danger">
-                        <a href="pages/delet_professor.php?id=
+                    <button class="btn btn-warning ">
+                        <a class="text-white" href="pages/delet_professor.php?id=
                         <?php echo $row[0]; ?> " onclick="return confirm
                         ('Tem certeza que deseja deletar esse registro?');">Remover</a>
                     </button>

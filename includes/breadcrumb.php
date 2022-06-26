@@ -1,6 +1,6 @@
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="#">Home</a>
+        <a href="page.php?page=home">Home</a>
     </li>
     <li class="breadcrumb-item">
         <a href="#">Páginas</a>
