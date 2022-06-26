@@ -37,7 +37,7 @@
                             <ul>
                                 <li>
                                     <a  href="?page=cst">Cadastros</a>
-                                    <a  href="?page=listar_cst">Listar cursos</a>
+                                    <a  href="?page=listar_cursos">Listar cursos</a>
                                     
                                 </li>                                
                             </ul>                           

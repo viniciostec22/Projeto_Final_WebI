@@ -1,19 +1,22 @@
 <?php
     //listando professores
 
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+
     include("./includes/conn.php");
 ?>
 
-<table id="professores" class="table table-striped table-bordered">
+<table id="cst_gti" class="table table-striped table-bordered">
     <tr>
         <td><strong>ID</strong></td>
-        <td><strong>Nome</strong></td>
+        <td><strong>Curso</strong></td>
         <td><strong>Descrição</strong></td>
         <td><strong>Editar</strong></td>
         <td><strong>Remover</strong></td>
     </tr>
     <?php
-        $sql="select * from cst;";
+        $sql="select * from cst_gti;";
 
         $result = mysqli_query($conn, $sql);
 
@@ -23,7 +26,7 @@
                 <td><?php echo $row[0]; ?></td>
                 <td><?php echo $row[1]; ?></td>
                 <td><?php echo $row[2]; ?></td>
-                <td><?php echo $row[3]; ?></td>
+                
                 <td>
                     <button class="btn btn-success">
                         <a class="text-white" href="pages/editar_professor.php?id=<?php echo $row[0]; ?> ">Editar</a>
