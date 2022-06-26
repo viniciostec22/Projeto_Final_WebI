@@ -65,7 +65,7 @@
                             <a href="#">Disciplinas</a>
                             <ul>
                                 <li>
-                                    <a  href="?page=professor">Cadastros</a>
+                                    <a  href="?page=disciplinas">Cadastros</a>
                                 </li>                                
                             </ul>                           
                         </li>                        
