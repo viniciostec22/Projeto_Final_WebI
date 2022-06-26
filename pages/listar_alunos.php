@@ -36,7 +36,7 @@
             </td>
                 <td>
                     <button class="btn btn-warning ">
-                        <a class="text-white" href="pages/delet_professor.php?id=
+                        <a class="text-white" href="pages/deletar_alunos.php?id=
                         <?php echo $row[0]; ?> " onclick="return confirm
                         ('Tem certeza que deseja deletar esse registro?');">Remover</a>
                     </button>
