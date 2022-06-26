@@ -64,6 +64,9 @@ require "includes/validation.php";
                 else if($page=='disciplinas'){
                     include 'pages/disciplinas.php';
                 }
+                else if($page=='listar_disciplinas'){
+                    include 'pages/listar_disciplinas.php';
+                }
             }
             ?>
             
