@@ -67,7 +67,6 @@
                                 <li>
                                     <a  href="?page=disciplinas">Cadastros</a>
                                     <a  href="?page=listar_disciplinas">Listar disciplinas</a>
-                                    <a  href="?page=editar_disciplinas">Listar1 disciplinas</a>
                                 </li>                                
                             </ul>                           
                         </li>                        
