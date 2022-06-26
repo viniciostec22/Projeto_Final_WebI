@@ -29,7 +29,7 @@
                 
                 <td>
                     <button class="btn btn-success">
-                        <a class="text-white" href="pages/editar_professor.php?id=<?php echo $row[0]; ?> ">Editar</a>
+                        <a class="text-white" href="pages/editar_curso.php?id=<?php echo $row[0]; ?> ">Editar</a>
                     </button>
 
             </td>

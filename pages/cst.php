@@ -6,8 +6,8 @@
         </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Descrição</label>
-        <textarea class="form-control" name="descricao" id="descricao" rows="5" cols="50"placeholder="Até 255 caracteres"></textarea>
-  </div>
+            <textarea class="form-control" name="descricao" id="descricao" rows="5" cols="50"placeholder="Até 255 caracteres"></textarea>
+        </div>
         
     
         <button class="btn btn-primary btn-block">cadastrar</button>
