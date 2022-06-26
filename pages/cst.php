@@ -1,7 +1,8 @@
+<p class="h1">Cadastrar Cursos </p>
 <div class="col-md-12">
     <form action="page.php?page=cst" method="POST">
         <div class="form-group">
-        <label for="exampleFormControlInput1">Nome do curso </label>
+            <label for="exampleFormControlInput1">Nome do curso </label>
             <input name="nome" id="nome" type="text" class="form-control" placeholder="Informe o nome do curso" required autofocus>
         </div>
         <div class="form-group">

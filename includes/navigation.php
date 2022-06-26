@@ -56,7 +56,7 @@
                             <a href="#">Alunos</a>
                             <ul>
                                 <li>
-                                    <a  href="?page=professor">Cadastros</a>
+                                    <a  href="?page=alunos">Cadastros</a>
                                 </li>                                
                             </ul>                           
                         </li>
