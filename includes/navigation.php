@@ -33,6 +33,16 @@
                     <ul>
                         <li class="navigation-divider">Registros</li>
                         <li>
+                            <a href="#">Curso</a>
+                            <ul>
+                                <li>
+                                    <a  href="?page=cst">Cadastros</a>
+                                    <a  href="?page=listar_cst">Listar cursos</a>
+                                    
+                                </li>                                
+                            </ul>                           
+                        </li>
+                        <li>
                             <a href="#">Professores</a>
                             <ul>
                                 <li>

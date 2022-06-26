@@ -45,11 +45,18 @@ require "includes/validation.php";
                     include 'pages/home.php';
                 }else if($page=='professor'){
                     include 'pages/professor.php';
+
                 }else if($page=='listar_professor'){
                     include 'pages/listar_professor.php';
+
+                }else if($page=='cst'){
+                    include 'pages/cst.php';
+
+                }else if($page=='listar_cursos'){
+                    include 'pages/listar_cursos.php';
+
+                }
                 
-                } 
-                   
                 
             }
             ?>
