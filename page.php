@@ -58,7 +58,9 @@ require "includes/validation.php";
                 else if($page=='alunos'){
                     include 'pages/alunos.php';
                 }
-                
+                else if($page=='listar_alunos'){
+                    include 'pages/listar_alunos.php';
+                }
             }
             ?>
             

@@ -57,6 +57,7 @@
                             <ul>
                                 <li>
                                     <a  href="?page=alunos">Cadastros</a>
+                                    <a  href="?page=listar_alunos">Listar Alunos</a>
                                 </li>                                
                             </ul>                           
                         </li>
