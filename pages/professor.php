@@ -4,6 +4,7 @@
         <div class="form-group">
             <input name="nome" id="nome" type="text" class="form-control" placeholder="Informe o seu nome" required autofocus>
         </div>
+        <
         <div class="form-group">
             <input name="disciplina" id="disciplina" type="text" class="form-control" placeholder="Informe a disciplina" required>
         </div>
