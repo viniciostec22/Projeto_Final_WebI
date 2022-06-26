@@ -15,7 +15,10 @@
         <td><strong>Remover</strong></td>
     </tr>
     <?php
-        $sql="select * from professores;";
+        $sql="SELECT professores.id, professores.nome,disciplinas.disciplina, disciplinas.periodo 
+        FROM professores 
+        JOIN disciplinas
+        ON professores.id = disciplinas_id;  ";
 
         $result = mysqli_query($conn, $sql);
 

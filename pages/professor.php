@@ -4,9 +4,9 @@
         <div class="form-group">
             <input name="nome" id="nome" type="text" class="form-control" placeholder="Informe o seu nome" required autofocus>
         </div>
-        <
+        
         <div class="form-group">
-            <input name="disciplina" id="disciplina" type="text" class="form-control" placeholder="Informe a disciplina" required>
+            <input name="disciplinas_id" id="disciplinas_id" type="text" class="form-control" placeholder="Informe a disciplina" required>
         </div>
         <div class="form-group">
             <input name="periodo" id="periodo" type="text" class="form-control" placeholder="Informe o periodo" required>
@@ -24,14 +24,14 @@ if (!empty($_POST['nome'])) {
     include("./includes/conn.php");
     
     $nome        = $_POST['nome'];
-    $disciplina  = $_POST['disciplina'];
-    $periodo     = $_POST['periodo'];
+    $disciplinas_id  = $_POST['disciplinas_id'];
+   
    
 
     //string SQL
     $sql = "insert into professores
-    (nome, disciplina, periodo) 
-    values ('".$nome."', '".$disciplina."', '".$periodo."');";
+    (nome, disciplinas_id) 
+    values ('".$nome."', '".$disciplinas_id."');";
 
     //Execução da Consulta
     if (mysqli_query($conn, $sql)) {
