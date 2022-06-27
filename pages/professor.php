@@ -1,4 +1,4 @@
-<p class="h1">Cadastrar Professores </p>
+<p class="h1">Cadastrar Professores. </p>
 <div class="col-md-12">
     <form action="page.php?page=professor" method="POST">
         <div class="form-group">
