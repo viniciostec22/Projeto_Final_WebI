@@ -67,6 +67,12 @@ require "includes/validation.php";
                 else if($page=='listar_disciplinas'){
                     include 'pages/listar_disciplinas.php';
                 }
+                else if($page=='vincular_materia'){
+                    include 'pages/vincular_materia.php';
+                }
+                else if($page=='disciplinas_cst'){
+                    include 'pages/disciplinas_cst.php';
+                }
                 
             }
             ?>

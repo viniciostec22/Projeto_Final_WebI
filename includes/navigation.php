@@ -38,6 +38,7 @@
                                 <li>
                                     <a  href="?page=cst">Cadastros</a>
                                     <a  href="?page=listar_cursos">Listar cursos</a>
+                                    <a  href="?page=vincular_materia">vincular materia ao curso</a>
                                     
                                 </li>                                
                             </ul>                           
@@ -69,7 +70,16 @@
                                     <a  href="?page=listar_disciplinas">Listar disciplinas</a>
                                 </li>                                
                             </ul>                           
-                        </li>                        
+                        </li>
+                        <li>
+                            <a href="#">Relatorios</a>
+                            <ul>
+                                <li>
+                                    <a  href="?page=disciplinas_cst">Disciplinas ofertadas pelo Curso</a>
+                                    <a  href="?page=listar_disciplinas">Listar disciplinas</a>
+                                </li>                                
+                            </ul>                           
+                        </li>                               
                     </ul>
                 </div>                
             </div>
