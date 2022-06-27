@@ -76,7 +76,7 @@
                             <ul>
                                 <li>
                                     <a  href="?page=disciplinas_cst">Disciplinas ofertadas pelo Curso</a>
-                                    <a  href="?page=listar_disciplinas">Listar disciplinas</a>
+    
                                 </li>                                
                             </ul>                           
                         </li>                               
