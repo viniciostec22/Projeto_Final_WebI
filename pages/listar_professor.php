@@ -18,7 +18,7 @@
         $sql="SELECT professores.id, professores.nome,disciplinas.disciplina, disciplinas.periodo 
         FROM professores 
         JOIN disciplinas
-        ON professores.id = disciplinas.id;  ";
+        ON professores.id;  ";
 
         $result = mysqli_query($conn, $sql);
 

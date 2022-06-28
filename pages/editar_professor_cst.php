@@ -4,7 +4,7 @@
 
     include("../includes/conn.php");
 
-    $sql = "SELECT * FROM professores WHERE id=" .$_REQUEST["id"];
+    $sql = "SELECT * FROM cst_gti_has_professores WHERE id=" .$_REQUEST["id"];
     $res = $conn->query($sql);
     $row = $res->fetch_object();
     
@@ -26,30 +26,29 @@
 <script src="../vendors/dataTable/datatables.min.js"></script>
 </head>
 <div class="col-md-12 d-flex justify-content-center">
-<p class="h1">Editar cadastro </p>
+<p class="h1">Editar professores Vinculados ao curso </p>
 </div>
 <div class="col-md-12 d-flex justify-content-center">
-    <form action="../pages/salva.php?id=" method="POST">
+    <form action="../pages/salva_professor_cst.php?id=" method="POST">
         <input type="hidden" name="acao" value="editar">
         <input type="hidden" name="id" value="<?php print $row->id; ?>" >
         <div class="form-group">
-        <label for="exampleInputEmail1">Nome</label>
-            <input name="nome" id="nome" type="text" value="<?php print $row->nome; ?>" 
-            class="form-control" placeholder="Informe o seu nome" required autofocus>
+        <label for="exampleInputEmail1">Curso</label>
+            <input name="cst_gti_id" id="cst_gti_id" type="text" value="<?php print $row->cst_gti_id; ?>" 
+            class="form-control"  required autofocus>
         </div>
         <div class="form-group">
-        <label for="exampleInputEmail1">Disciplina</label>
-            <input value="<?php print $row->disciplinas_id; ?>"name="disciplinas_id" 
-            id="disciplinas_id" type="text" class="form-control" placeholder="ID da disciplina" required>
+        <label for="exampleInputEmail1">Professores</label>
+        <input value="<?php print $row->professores_id; ?>"name="professores_id" id="professores_id" 
+            type="text" class="form-control" required>
+            
         </div>
-       
+
+        
         
             <button class="btn btn-Success ">Salva</button>
             <button class="btn btn-danger ">
-                <a href="../page.php?page=listar_professor">Cancelar</a>
+                <a href="../page.php?page=professores_cst">Cancelar</a>
             </button>
         
     </form>
-   
-</div>
-

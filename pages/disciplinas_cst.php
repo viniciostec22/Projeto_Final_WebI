@@ -40,15 +40,6 @@
 
 <script>
     $(document).ready(function (){
-        $('#listar_cursos').DataTable();
-    });    
-</script>
-
-
-
-
-<script>
-    $(document).ready(function (){
         $('#diciplinas_cst').DataTable();
     });    
 </script>

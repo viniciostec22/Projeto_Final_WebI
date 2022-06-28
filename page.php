@@ -79,6 +79,9 @@ require "includes/validation.php";
                 else if($page=='professores_cst'){
                     include 'pages/professores_cst.php';
                 }
+                else if($page=='listar_disciplinas_cst'){
+                    include 'pages/listar_disciplinas_cst.php';
+                }
                
             }
             ?>

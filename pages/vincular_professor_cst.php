@@ -7,7 +7,7 @@
         </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Professor</label>
-            <input name="professores_id" id="professores_id" type="text" class="form-control" placeholder="Informe o ID da Materia" required autofocus>
+            <input name="professores_id" id="professores_id" type="text" class="form-control" placeholder="Informe o ID do professor" required autofocus>
         </div>
         
     
