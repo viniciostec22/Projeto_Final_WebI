@@ -8,7 +8,7 @@
         
         <div class="form-group">
             <label for="exampleFormControlInput1">ID da Disciplina Ministrada</label>
-            <input name="disciplinas_id" id="disciplinas_id" type="text" class="form-control" placeholder="Informe a disciplina" required>
+            <input name="disciplinas_id" id="disciplinas_id" type="text" class="form-control" placeholder="Informe o ID da disciplina" required>
         </div>
         
     

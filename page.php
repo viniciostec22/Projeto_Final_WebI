@@ -73,7 +73,13 @@ require "includes/validation.php";
                 else if($page=='disciplinas_cst'){
                     include 'pages/disciplinas_cst.php';
                 }
-                
+                else if($page=='vincular_professor'){
+                    include 'pages/vincular_professor_cst.php';
+                }
+                else if($page=='professores_cst'){
+                    include 'pages/professores_cst.php';
+                }
+               
             }
             ?>
             

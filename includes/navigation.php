@@ -39,6 +39,8 @@
                                     <a  href="?page=cst">Cadastros</a>
                                     <a  href="?page=listar_cursos">Listar cursos</a>
                                     <a  href="?page=vincular_materia">vincular materia ao curso</a>
+                                    <a  href="?page=vincular_professor">Vincular Professor ao curso</a>
+                                    <a  href="?page=professores_cst">Listar ptofessores vinculados</a>
                                     
                                 </li>                                
                             </ul>                           
