@@ -26,8 +26,14 @@
         ON professores.id =  cst_gti_has_professores.professores_id
         ORDER BY cst_gti.nome;";
 
+        if($sql){
+            print "<script> alert('Não foi encontrado nem um dado para o filtro selecionado!') </script>";
+            print "<script>
+                        location.href='./page.php?page=home#';
+                    </script>";
+        }
         $result = mysqli_query($conn, $sql);
-
+       
         while ($row = mysqli_fetch_array($result)) {
         ?>
             <tr>
@@ -51,6 +57,8 @@
                                
             </tr>
         <?php
+        
+       
         }
     ?>
 </table>
