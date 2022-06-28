@@ -19,7 +19,7 @@
         $sql="SELECT alunos.id, alunos.nome, alunos.matricula, alunos.periodo_entrada, cst_gti.nome 
             FROM alunos 
             JOIN cst_gti
-            ON alunos.id = cst_gti_id; ";
+            ON alunos.id = cst_gti.id; ";
 
         $result = mysqli_query($conn, $sql);
 

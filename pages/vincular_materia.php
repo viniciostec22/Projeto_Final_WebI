@@ -3,11 +3,11 @@
     <form action="page.php?page=vincular_materia" method="POST">
         <div class="form-group">
             <label for="exampleFormControlInput1">Curso</label>
-            <input name="cst_gti_id" id="cst_gti_id" type="text" class="form-control" placeholder="Informe o nome do curso" required autofocus>
+            <input name="cst_gti_id" id="cst_gti_id" type="text" class="form-control" placeholder="Informe o ID do Curso" required autofocus>
         </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Materia</label>
-            <input name="disciplinas_id" id="disciplinas_id" type="text" class="form-control" placeholder="Informe o nome do curso" required autofocus>
+            <input name="disciplinas_id" id="disciplinas_id" type="text" class="form-control" placeholder="Informe o ID da Materia" required autofocus>
         </div>
         
     

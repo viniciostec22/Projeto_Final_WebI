@@ -2,15 +2,15 @@
 <div class="col-md-12">
     <form action="page.php?page=professor" method="POST">
         <div class="form-group">
+            <label for="exampleFormControlInput1">Nome do Professor </label>
             <input name="nome" id="nome" type="text" class="form-control" placeholder="Informe o seu nome" required autofocus>
         </div>
         
         <div class="form-group">
+            <label for="exampleFormControlInput1">ID da Disciplina Ministrada</label>
             <input name="disciplinas_id" id="disciplinas_id" type="text" class="form-control" placeholder="Informe a disciplina" required>
         </div>
-        <div class="form-group">
-            <input name="periodo" id="periodo" type="text" class="form-control" placeholder="Informe o periodo" required>
-        </div>
+        
     
         <button class="btn btn-primary btn-block">cadastrar</button>
     </form>
